@@ -1,4 +1,4 @@
-# 📋 Clipboard Flash Notifier
+# 📋 Texty
 
 A lightweight, cross-platform Python tool that flashes a popup notification near your cursor whenever **text** or **files** are copied to your clipboard.
 
@@ -19,7 +19,7 @@ Perfect for editors, developers, or power users who want quick visual feedback o
 
 ## 🖥️ Preview
 
-![Pending](https://github.com/yourusername/clipboard-flash/assets/demo.gif)  
+![Pending](https://github.com/motionkartik/Texty/assets/demo.gif)  
 
 ---
 
@@ -56,10 +56,7 @@ pip install pyperclip pyautogui pyobjc
 Clone this repository or download the script:
 
 ```bash
-git clone https://github.com/yourusername/clipboard-flash.git
-cd clipboard-flash
-python clipboard_flash.py
-
+git clone https://github.com/motionkartik/Texty.git
 ```
 
 The script will run in the background and display a small flash popup near your mouse cursor whenever you copy:
