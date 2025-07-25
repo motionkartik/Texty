@@ -19,7 +19,7 @@ Perfect for editors, developers, or power users who want quick visual feedback o
 
 ## 🖥️ Preview
 
-![Demo(not ready yet)](link)  
+![Pending](https://github.com/yourusername/clipboard-flash/assets/demo.gif)  
 
 ---
 
@@ -30,42 +30,58 @@ Install Python dependencies using `pip`:
 ### Windows
 ```bash
 pip install pyperclip pyautogui pywin32
-
+```
+### macOS
+```bash
 pip install pyperclip pyautogui pyobjc
+```
+---
 
+## ⚙️ Platform-Specific Notes
+
+
+### macOS:
+
+- Uses pyobjc and AppKit to read filenames from the clipboard
+
+- Transparency may vary depending on macOS window manager
+
+### Windows:
+
+- Uses pywin32 for clipboard file detection via CF_HDROP
+
+- Works well with Explorer and text from most apps
+
+### 🚀 Usage
+Clone this repository or download the script:
+
+```bash
+git clone https://github.com/yourusername/clipboard-flash.git
+cd clipboard-flash
+python clipboard_flash.py
+
+```
 
 The script will run in the background and display a small flash popup near your mouse cursor whenever you copy:
 
-📝 Text (e.g., Ctrl+C or ⌘+C)
+- 📝 Text (e.g., Ctrl+C or ⌘+C)
 
-📁 Files (copied from Explorer or Finder)
+- 📁 Files (copied from Explorer or Finder)
 
-⚙️ Platform-Specific Notes
-macOS:
-Uses pyobjc and AppKit to read filenames from the clipboard
 
-Transparency may vary depending on macOS window manager
 
-Windows:
-Uses pywin32 for clipboard file detection via CF_HDROP
+### 📦 Optional Enhancements
+- You can customize or extend the notifier with:
 
-Works well with Explorer and text from most apps
+- Native system notifications (via osascript or win10toast)
 
-📦 Optional Enhancements
-You can customize or extend the notifier with:
+- System tray toggle
 
-Native system notifications (via osascript or win10toast)
+- Clipboard history log
 
-System tray toggle
+- Styling with icons or themes
 
-Clipboard history log
+### ❌ Limitations
+- Linux is currently not supported (due to clipboard model differences)
 
-Styling with icons or themes
-
-❌ Limitations
-Linux is currently not supported (due to clipboard model differences)
-
-Cannot detect images or rich text (yet)
-
-📄 License
-MIT License — use it freely, modify it, improve it.
+- Cannot detect images or rich text (yet)
